@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import Nav from './Nav';
+
 const Create = () => {
     // state
     const [state, setState] = useState({
@@ -35,50 +36,53 @@ const Create = () => {
             });
     };
 
-    return(
+    return (
         <div className="container pb-5">
-            <Nav/>
-            <br/>
-            <h1>Create Post</h1>
-            <br/>
+            <Nav />
+            <br />
+            <h1>CREATE POST</h1>
+            <br />
+
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label className="text-muted">Title</label>
-                    <input 
-                    value={title} 
-                    onChange={handleChange('title')} 
-                    type="text" 
-                    className="form-control" 
-                    placeholder="Post title." 
-                    required/>
+                    <input
+                        onChange={handleChange('title')}
+                        value={title}
+                        type="text"
+                        className="form-control"
+                        placeholder="Post title"
+                        required
+                    />
                 </div>
                 <div className="form-group">
                     <label className="text-muted">Content</label>
-                    <textarea 
-                    value={content} 
-                    onChange={handleChange('content')} 
-                    type="text" 
-                    className="form-control" 
-                    placeholder="Write something.." 
-                    required/>
+                    <textarea
+                        onChange={handleChange('content')}
+                        value={content}
+                        type="text"
+                        className="form-control"
+                        placeholder="Write something.."
+                        required
+                    />
                 </div>
                 <div className="form-group">
                     <label className="text-muted">User</label>
-                    <input 
-                    value={user} 
-                    onChange={handleChange('user')} 
-                    type="text" 
-                    className="form-control" 
-                    placeholder="Enter your name." 
-                    required/>
+                    <input
+                        onChange={handleChange('user')}
+                        value={user}
+                        type="text"
+                        className="form-control"
+                        placeholder="Your name"
+                        required
+                    />
                 </div>
                 <div>
                     <button className="btn btn-primary">Create</button>
                 </div>
             </form>
         </div>
- );
+    );
 };
-
 
 export default Create;
