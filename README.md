@@ -1,6 +1,6 @@
 # sklasnia
 # PROJEKT ZALICZENIOWY W TECHNOLOGII MERN.
-# CRUD, tworzenie, wyswietlanie, edycja i usuwanie postów. Wyświetlanie wszystkich lub pojedynczego postu. System logowania, polegajacy na jednym haśle narzuconym z góry. Obsluga sesji. 
+# CRUD, tworzenie, wyswietlanie, edycja i usuwanie postów. Baza danych w NoSql'owym MongoDB. Wyświetlanie wszystkich lub pojedynczego postu. System logowania, polegajacy na jednym haśle narzuconym z góry. Obsluga sesji. 
 # Wykonany przez: 
 # Łukasz Kopyszko,
 # Suleyman Dzhemilov.
